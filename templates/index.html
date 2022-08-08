@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A custom, responsive landing page to dial a service">
     <title>PREMIER HEALTH PATIENT REGISTRATION</title>
-    <link rel="stylesheet" href="/css/pure/styles.css">
-    <link rel="stylesheet" href="/css/pure/grids-responsive-min.css">
-    <link rel="stylesheet" href="/css/pure/site/static/layouts/marketing/styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pure/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pure/grids-responsive-min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pure/site/static/layouts/marketing/styles.css') }}">
 </head>
 <body>
 <div class="splash-container">
     <div class="splash">
         <a href="https://mms.businesswire.com/media/20170605005672/en/590727/4/2940652_PremierHealthlogo.jpg?download=1" target="_blank">
-            <img src="https://mms.businesswire.com/media/20170605005672/en/590727/4/2940652_PremierHealthlogo.jpg?download=1" /></a>
+            <img class="pure-img" src="https://mms.businesswire.com/media/20170605005672/en/590727/4/2940652_PremierHealthlogo.jpg?download=1" /></a>
         <h1 class="splash-head">PATIENT REGISTRATION</h1>
         <p class="splash-subhead">
             Register for Outpatient Services
