@@ -7,8 +7,8 @@ ENV APP_HOME /
 WORKDIR $APP_HOME
 COPY . .
 
-#install PRoduction Dependencies
-RUN pip install Flask gunicorn
+# copy the requirements file into the image
+COPY ./requirements.txt /app/requirements.txt
 
 #Run the webservice on container startup. Here we use the gunicorn webserver
 #with one worker process and 8 threads.
